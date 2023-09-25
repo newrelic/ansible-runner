@@ -23,7 +23,7 @@ docker run -it -v ~/my-local-configs/:/configs/ ansible
 ```
 
 
-### installing newrelic with install-ansible
+### installing newrelic with ansible-install
 
 This uses the `newrelic_install` ansible role from this source https://github.com/newrelic/ansible-install
 
