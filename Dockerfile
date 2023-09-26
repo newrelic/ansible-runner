@@ -9,7 +9,7 @@ ARG python_version
 ARG package
 ARG package_version
 ARG maintainer=""
-ARG TARGETPLATFORM="linux/arm64"
+ARG TARGETPLATFORM=""
 LABEL python=$python_version
 LABEL package=$package
 LABEL maintainer=$maintainer
