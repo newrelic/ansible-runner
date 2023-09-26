@@ -1,23 +1,15 @@
 ARG python_version=latest
-ARG build_target=$python_version
-ARG publish_target=$python_version
-
-FROM python:$build_target as Builder
-
-# Add arguments to container scope
-ARG build_target
-ARG package
-ARG package_version
 
 # Build our actual container now.
-FROM python:$publish_target
+FROM python:$python_version
 
 # Add args to container scope.
 ARG publish_target
 ARG python_version
 ARG package
+ARG package_version
 ARG maintainer=""
-ARG TARGETPLATFORM=""
+ARG TARGETPLATFORM="linux/arm64"
 LABEL python=$python_version
 LABEL package=$package
 LABEL maintainer=$maintainer
