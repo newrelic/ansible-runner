@@ -8,6 +8,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
+  DOCKER_PLATFORMS: linux/amd64,linux/arm/v7,linux/arm64
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
