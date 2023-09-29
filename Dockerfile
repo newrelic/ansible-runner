@@ -23,7 +23,7 @@ RUN apt-get update -y
 RUN apt-get install vim -y
 
 # Install pipx
-RUN python3 -m pip install pipx
+RUN python3 -m pip install pipx pywinrm
 RUN python3 -m pipx ensurepath
 
 # Install ansible
