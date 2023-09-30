@@ -29,9 +29,10 @@ RUN python3 -m pipx ensurepath
 # Install ansible
 RUN pipx install --include-deps ansible
 RUN pipx install ansible-core
+# Windows WinRM dependency
+RUN /root/.local/pipx/venvs/ansible/bin/python -m pip install pywinrm
 
 # Install other ansible dependencies
-# RUN ansible-galaxy install newrelic.newrelic_install
-# RUN ansible-galaxy collection install ansible.windows ansible.utils
+RUN /root/.local/bin/ansible-galaxy collection install ansible.windows ansible.utils
 
 CMD /bin/bash -c 'python3 --version; /root/.local/bin/ansible --version; /bin/bash'
