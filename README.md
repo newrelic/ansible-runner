@@ -1,3 +1,5 @@
+[![Community Project header](https://github.com/newrelic/open-source-office/raw/master/examples/categories/images/Community_Project.png)](https://github.com/newrelic/open-source-office/blob/master/examples/categories/index.md#category-community-project)
+
 # ansible-runner
 
 This creates a docker image of Ansible. The installation steps are taken from the Ansible documentation https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html using pipx.
