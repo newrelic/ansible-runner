@@ -30,7 +30,7 @@ RUN python3 -m pipx ensurepath
 RUN pipx install --include-deps ansible
 RUN pipx install ansible-core
 # Windows WinRM dependency
-RUN /root/.local/pipx/venvs/ansible/bin/python -m pip install pywinrm
+RUN /root/.local/share/pipx/venvs/ansible/bin/python -m pip install pywinrm
 
 # Install other ansible dependencies
 RUN /root/.local/bin/ansible-galaxy collection install ansible.windows ansible.utils
