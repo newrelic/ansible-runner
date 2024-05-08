@@ -21,7 +21,7 @@ docker run -it ansible
 If you need to mount a virtual volume, to pass access to a file.pem for example, use a syntax like this:
 
 ```bash
-docker run -it -v ~/my-local-configs/:/confs/ ansible
+docker run -it -v ~/my-local-configs/:/configs/ ansible
 ```
 
 
